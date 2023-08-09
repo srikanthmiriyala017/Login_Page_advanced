@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("http://wordimagemedia.com/student_work/seasons-dhw/images/summer-page.png") no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    margin-left: 40px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scalex(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.navbar a:hover::after {
+    transform: scalex(1);
+}
+
+.navbar .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 40px;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.navbar .btnLogin-popup:hover {
+    background-color: #fff;
+    color: #162938;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the login page */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent;
+}
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #fff;
+    background: #162938;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 440px;
+    padding: 20px;
+    background: transparent;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    position: absolute;
+    left: 6px;
+    padding-left: 15px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-family: Roboto;
+    transition: .5s;
+}
+
+.input-group .input:focus~label,
+.input-group .input:valid~label {
+    top: -5px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    transition: border-bottom-color 0.3s;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 55vh;
+    font-size: 1.2em;
+    color: #162938;
+
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 15px;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #162938;
+    outline: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
