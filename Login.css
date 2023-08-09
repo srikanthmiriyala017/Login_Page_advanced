@@ -79,11 +79,7 @@ header {
     color: #162938;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* Style the login page */
 
@@ -113,7 +109,6 @@ header {
 }
 
 .card {
-    background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: 440px;
@@ -161,10 +156,15 @@ header {
     border: none;
     outline: none;
     padding: 10px;
-    border: none;
     border-bottom: 2px solid black;
     background-color: transparent;
-    transition: border-bottom-color 0.3s;
+    transition: border-bottom-color 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+    border-bottom-color: #162938;
+    background-color: rgba(0, 0, 0, 0);
+    /* Change this value to control the transparency */
 }
 
 .input-group .icon {
@@ -173,6 +173,72 @@ header {
     font-size: 1.2em;
     color: #162938;
 
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        display: none;
+    }
+
+    .navbar .btnLogin-popup {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar .btnLogin-popup {
+        margin-left: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .input-group label {
+        font-size: 0.9em;
+    }
+
+    .input-group .icon {
+        left: 10px;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    body {
+        justify-content: center;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar a,
+    .btnLogin-popup {
+        margin-left: 40px;
+    }
+
+    .card {
+        width: 400px;
+        height: 440px;
+    }
+
+    .input-group .icon {
+        left: 55px;
+    }
 }
 
 .checkbox-group {
